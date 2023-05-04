@@ -1,0 +1,163 @@
+:root{
+    background-image: url(1568880406_1.jpg);
+}
+a{
+    color: white;
+    margin: auto;
+}
+
+.canvas{
+    display: block;
+}
+.container{
+   display: grid; 
+   grid-template-columns:10% 40% 40% 10%;/*==1fr 1fr 0.5fr 1fr 2fr 2fr*/
+   grid-template-rows: 1vmin 7vmin 2vmin 5vmin 1vmin 20vmin 10vmin 10vmin repeat(10,20px);
+}
+
+.choice_bar{/*===================================??????????????======*/
+    display: flex;
+    position: relative;
+    float: right;
+    /*grid-column: 1/2;
+    grid-row:1/4;*/
+    color: white;
+    flex-direction: column;
+    z-index: 0;
+    /*max-width: 10%;*/
+    margin: auto;
+    justify-content:  space-between;
+}
+@media screen and (max-width:720px){
+
+   .choice_bar{
+    display: flex;
+    /*grid-column: 1/5;
+    grid-row: 15/16;*/
+    color: white;
+    flex-direction: row;
+    justify-content:  space-between;
+    position: absolute;
+    top: 90%; 
+    left: 35%;
+    width: 200px;
+   
+}  
+  .choice{
+
+    margin-left: auto;
+  }   
+}
+p{
+    display: inline-block;
+  margin: 5%;
+}
+.puzzle {
+ /*border:2px solid black; */
+/*width: 80vmin ;
+height: 80vmin;*/
+
+/*max-width: 50vmin;*/
+grid-column:1 / 10 ;
+    grid-row: 6/7;
+    margin: auto;
+   
+}
+.menu{
+grid-column: 1/10;
+grid-row: 2/3;
+display: flex;
+justify-content: space-between;
+/*max-width: 100vh;
+margin-left: 20vw;*/
+height: 7vmin;
+
+}
+
+.but{
+    text-align: center;
+    vertical-align:auto;
+    justify-content:center;
+    border: 1px solid black;
+    border-radius: 25px;
+    font-size: 100%;
+    margin-top: auto;
+    margin-bottom: auto;
+    height: 7vmin;
+    background-color: aqua;
+    background-image: linear-gradient(45deg, aqua , #0a6767 );
+    color: rgb(27, 23, 23);
+
+    
+
+
+
+
+
+
+
+
+
+}
+
+.but:hover{
+    cursor: pointer;
+    background-color: #0a6767;
+    background-image: linear-gradient(45deg, #0a6767,#0b2222);
+    color:white;
+}
+#but_run{
+    
+    
+    width: 25vmin;
+    vertical-align: centr;
+   margin-left: auto;
+}
+#but_stop{
+    
+    
+    width: 15vmin;
+    margin-left: 1%;
+    margin-right: 1%;
+}
+#but_save {
+    
+    width: 20vmin;
+    margin-right: 1%;
+}
+#but_res{
+    
+    width: 20vmin;
+    margin-right: auto;
+
+}
+.out{
+    display: flex;
+    grid-column: 2/4;
+    grid-row: 4/5;
+    font-size: 2vw;
+    color: white;
+
+}
+#out_moves{
+    margin-left: auto;
+    margin-right: 1%;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+#out_moves_value{
+    
+    min-width: 3em;
+    margin-right: 5%;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+#out_time{
+    margin-right: 1%;
+
+}
+#out_time_value{
+    margin-right: auto;
+    min-width: 5em;
+    margin-top: 0%;
+}
