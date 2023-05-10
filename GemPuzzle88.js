@@ -4,20 +4,24 @@
 const divi =document.getElementById("main");
 //<canvas id="canvas"></canvas>
 //document.createElement('section');
-divi.innerHTML=`<div class="puzzle"><canvas id="canvas"></canvas></div>
-<div class="menu" id="top_menu">
-<div class="but" id="but_run"><p>New game</p></div>
-<div class="but" id="but_stop"><p>Stop</p></div>
-<div class="but" id="but_save"><p>Save</p></div>
-<div class="but" id="but_res"><p>Result</p></div>
-</div>
-
+divi.innerHTML=`
 <div class="out" id="out_bar">
     <div class="out" id="out_moves"><p>Moves:</p></div>
     <div class="out" id="out_moves_value"><p>0</p></div>
     <div class="out" id="out_time"><p>Time:</p></div>
     <div class="out" id="out_time_value"><p>00:00:00</p></div>
 </div>
+
+
+
+
+<div class="puzzle"><canvas id="canvas"></canvas></div>
+<div class="menu" id="top_menu">
+<div class="but" id="but_run"><p>New game</p></div>
+
+</div>
+
+
 <div class="choice_bar"><span>Other size:</span>
   <div><a class="choice" id="choice_4x4" href="index.html">4X4</a></div>
   <div><a class="choice" id="choice_5x5" href="index55.html">5X5</a></div>
@@ -278,7 +282,7 @@ const stopGame=document.getElementById("but_stop");
       game.draw(); 
       if(game.getClicks()==1) { timeBegin=fixTimeBegining();timeRun=0;clockTimer();};
       console.log('begining    '+timeBegin);
-      stopGame.addEventListener('click',() =>{return});
+      //stopGame.addEventListener('click',() =>{return});
       //clockTimer();//==================================
      document.getElementById('out_moves_value').innerText=game.getClicks();//================================
      
