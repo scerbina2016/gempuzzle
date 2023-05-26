@@ -23,10 +23,10 @@ divi.innerHTML=`
 
 
 <div class="choice_bar"><span>Other size:</span>
-  <div><a class="choice" id="choice_4x4" href="index.html">4X4</a></div>
-  <div><a class="choice" id="choice_5x5" href="index55.html">5X5</a></div>
-  <div><a class="choice" id="choice_7x7" href="index66.html">6X6</a></div>
-  <div><a class="choice" id="choice_8x8" href="index88.html">8X8</a></div>
+  <div class="size_game"><a class="choice" id="choice_4x4" href="index.html">4X4</a></div>
+  <div class="size_game"><a class="choice" id="choice_5x5" href="index55.html">5X5</a></div>
+  <div class="size_game"><a class="choice" id="choice_7x7" href="index66.html">6X6</a></div>
+  <div class="size_game"><a class="choice" id="choice_8x8" href="index88.html">8X8</a></div>
 </div>
 
 `

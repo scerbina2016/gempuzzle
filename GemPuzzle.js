@@ -16,6 +16,8 @@ divi.innerHTML=`
 </div>
 <div class="puzzle"><canvas id="canvas"></canvas></div>
 
+
+
 <div class="menu" id="top_menu">
   <div class="but" id="but_run"><p>New game</p></div>
 </div>
@@ -27,19 +29,11 @@ divi.innerHTML=`
   <div class="size_game"><a class="choice" id="choice_8x8" href="index88.html">8X8</a></div>
 
 
-</div>`
+</div>
+`
 
 console.log(divi);
-//const new_Div=document.createElement('canvas');
-//new_Div.id='canvas';
 
-//document.body.insertBefore(new_Div,divi);
-
-//document.body.appendChild(new_Div);
-//console.log(new_Div);
-
-//divi[0].innerHTML='<div>aaaaaaaaaaaaaaaaaaaaa</div>';
-//puzzl.innerHTML='<div>aaaaaaaaaaaaaaaaaaaaa</div>';
 const burger = document.querySelector("main");
 
 function fixTimeBegining(){
@@ -222,12 +216,12 @@ const runMix=document.getElementById("but_run");
     
     let canvas = document.getElementById("canvas");
     if(window.innerWidth<window.innerHeight){
-        canvas.width  = window.innerWidth-150;
-        canvas.height = window.innerWidth-150;
+        canvas.width  = window.innerWidth-250;//-150
+        canvas.height = window.innerWidth-250;
         let cellSize = window.innerWidth / 4; 
     } else {
-        canvas.width  = window.innerHeight-150;
-        canvas.height = window.innerHeight-150; 
+        canvas.width  = window.innerHeight-250;
+        canvas.height = window.innerHeight-250; 
         let cellSize = window.innerWidth / 4; 
     }
 

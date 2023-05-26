@@ -23,25 +23,16 @@ divi.innerHTML=`
 
 
 <div class="choice_bar"><span>Other size:</span>
-  <div><a class="choice" id="choice_4x4" href="index.html">4X4</a></div>
-  <div><a class="choice" id="choice_5x5" href="index55.html">5X5</a></div>
-  <div><a class="choice" id="choice_7x7" href="index77.html">7X7</a></div>
-  <div><a class="choice" id="choice_8x8" href="index88.html">8X8</a></div>
+  <div class="size_game"><a class="choice" id="choice_4x4" href="index.html">4X4</a></div>
+  <div class="size_game"><a class="choice" id="choice_5x5" href="index55.html">5X5</a></div>
+  <div class="size_game"><a class="choice" id="choice_7x7" href="index77.html">7X7</a></div>
+  <div class="size_game"><a class="choice" id="choice_8x8" href="index88.html">8X8</a></div>
 </div>`
 
 
 
 console.log(divi);
-//const new_Div=document.createElement('canvas');
-//new_Div.id='canvas';
 
-//document.body.insertBefore(new_Div,divi);
-
-//document.body.appendChild(new_Div);
-//console.log(new_Div);
-
-//divi[0].innerHTML='<div>aaaaaaaaaaaaaaaaaaaaa</div>';
-//puzzl.innerHTML='<div>aaaaaaaaaaaaaaaaaaaaa</div>';
 const burger = document.querySelector("main");
 
 function fixTimeBegining(){

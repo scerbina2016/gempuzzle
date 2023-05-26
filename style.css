@@ -11,6 +11,7 @@ a{
 
 .canvas{
     display: block;
+    
 }
 .container{
 
@@ -21,7 +22,12 @@ a{
    grid-template-columns:10% 40% 40% 10%;/*==1fr 1fr 0.5fr 1fr 2fr 2fr*/
    /*grid-template-rows: 1vmin 7vmin 2vmin 5vmin 1vmin 20vmin 10vmin 10vmin repeat(10,20px);*/
 }
+.size_game{
 
+    margin-left: 1vw;
+    margin-right: 1vw;
+
+}
 .choice_bar{/*===================================??????????????======*/
     display: flex;
     flex-direction: row;
@@ -35,6 +41,7 @@ a{
     /*max-width: 10%;*/
     margin: auto;
     justify-content:  space-between;
+    font-size: 5vmin;
 }
 @media screen and (max-width:720px){
 
@@ -49,7 +56,7 @@ a{
     top: 90%; 
     left: 35%;
     width: 200px;*/
-   
+   font-size: 5vmin;
 }  
   .choice{
 
